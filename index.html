@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <main>
+
+        <h1>Cotações de moedas hoje</h1>
+
+        <p>
+            Acompanhe o valor do dólar, do euro e de outras moedas, com gráfico dos últimos 90 dias e calculadora de
+            conversão.'
+        </p>
+
+        <div id="moedas-em-destaque">
+
+            <h2>Principais moedas</h2>
+
+            <div id="principais-moedas">
+
+                <div class="card-moedas dolar">
+                    <h3>Dolar hoje</h3>
+                    <p>$ EUA | BRL</p>
+                    <div class="barra-horizontal"></div>
+                    <p class="valor">R$ 6,24</p>
+                </div>
+
+                <div class="card-moedas euro">
+                    <h3>Euro hoje</h3>
+                    <p>€ EUR | BRL</p>
+                    <div class="barra-horizontal"></div>
+                    <p class="valor">R$ 5,65</p>
+                </div>
+
+                <div class="card-moedas peso-argentino">
+                    <h3>Peso argentino hoje</h3>
+                    <p>$ ARS | BRL</p>
+                    <div class="barra-horizontal"></div>
+                    <p class="valor">R$ 0,003</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="conversor-container">
+            <h2>Conversor de Moedas</h2>
+            <p>Taxa de câmbio comercial</p>
+            <p class="taxa-de-cambio">R$1 BRL = 0,1769 USD</p>
+
+            <div class="caixa-conversor">
+                <input type="number" name="quantia" id="quantia" value="1000">
+
+                <select id="pais" name="pais">
+                    <option value="brl" selected>BRL</option>
+                    <option value="usd">USD</option>
+                    <option value="eur">EUR</option>
+                    <option value="gbr">GBR</option>
+                </select>
+            </div>
+            <div class="caixa-conversor">
+                <input type="number" name="quantia-convertida" id="quantia-convertida" value="176">
+                <select id="pais" name="pais">
+                    <option value="brl">BRL</option>
+                    <option value="usd" selected>USD</option>
+                    <option value="eur">EUR</option>
+                    <option value="gbr">GBR</option>
+                </select>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
